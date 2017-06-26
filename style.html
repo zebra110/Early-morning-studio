@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8">
+<title>清晨相册</title>
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/flexslider.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet"href="css/nav.css">
+<script src="js/modernizr-2.6.2.min.js"></script>
+<script src="js/respond.min.js"></script>
+</head>
+<body>
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="home.html">清晨录音棚</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="page-scroll" href="home.html">Home</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="guide.html">Guide</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="Listen.html">Listen</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="style.html">album</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<div id="fh5co-events" data-section="events" style="background-image: url(images/style_1.jpg);" data-stellar-background-ratio="0.5">
+  <div class="fh5co-overlay"></div>
+  <div class="container">
+    <div class="row text-center fh5co-heading row-padded">
+      <div class="col-md-8 col-md-offset-2 to-animate">
+        <h2 class="heading">清晨相册</h2>
+     
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="fh5co-event to-animate-2">
+          <h3>客户集锦</h3>
+          <span class="fh5co-event-meta">CUSTOMER HIGHLIGHTS</span>
+          <p>
+                <div id="colee"  style="overflow:hidden;height:160px;width:212px;margin-left:25px;">
+  <div id="colee1">
+    <p><img src="images/style_2.jpg" width="212" height="137"></p>
+    <p><img src="images/style_3.jpg" width="212" height="137"></p>
+    <p><img src="images/style_4.jpg" width="212" height="137"></p>
+    <p><img src="images/style_5.jpg" width="212" height="137"></p>
+  </div>
+  <div id="colee2"></div>
+</div>
+<script> 
+var speed=30;  
+var colee2=document.getElementById("colee2"); 
+var colee1=document.getElementById("colee1"); 
+var colee=document.getElementById("colee") ;
+colee2.innerHTML=colee1.innerHTML; //克隆colee1为colee2
+ function Marquee1(){  //当滚动至colee1与colee2交界时
+   if(colee2.offsetTop-colee.scrollTop<=0){  
+   colee.scrollTop-=colee1.offsetHeight; //colee跳到最顶端
+     }else{   
+	 colee.scrollTop++ } }  
+	 var MyMar1=setInterval(Marquee1,speed)//设置定时器 
+//鼠标移上时清除定时器达到滚动停止的目的 
+colee.onmouseover=function() {clearInterval(MyMar1)} 
+colee.onmouseout=function(){MyMar1=setInterval(Marquee1,speed)}
+ </script>
+          </p>
+          <p><a href="mv.html" class="btn btn-primary btn-outline">Read More</a></p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="fh5co-event to-animate-2">
+          <h3>明星专区</h3>
+          <span class="fh5co-event-meta">MUSIC ZONE</span>
+          <p>
+                 <div id="colee0"  style="overflow:hidden;height:160px;width:212px;margin-left:25px;">
+  <div id="colee11">
+    <p><img src="images/style_6.jpg" width="212" height="137"></p>
+    <p><img src="images/style_7.jpg" width="212" height="137"></p>
+    <p><img src="images/style_8.jpg" width="212" height="137"></p>
+    <p><img src="images/style_9.jpg" width="212" height="137"></p>
+  </div>
+  <div id="colee22"></div>
+</div>
+<script> 
+var speed=30;  
+var colee22=document.getElementById("colee22"); 
+var colee11=document.getElementById("colee11"); 
+var colee0=document.getElementById("colee0") ;
+colee22.innerHTML=colee11.innerHTML; //克隆colee1为colee2
+ function Marquee11(){  //当滚动至colee1与colee2交界时
+   if(colee22.offsetTop-colee0.scrollTop<=0){  
+   colee0.scrollTop-=colee11.offsetHeight; //colee跳到最顶端
+     }else{   
+	 colee0.scrollTop++ } }  
+	 var MyMar11=setInterval(Marquee11,speed)//设置定时器 
+//鼠标移上时清除定时器达到滚动停止的目的 
+colee.onmouseover=function() {clearInterval(MyMar11)} 
+colee.onmouseout=function(){MyMar11=setInterval(Marquee11,speed)}
+ </script>
+          </p>
+          <p><a href="#" class="btn btn-primary btn-outline">Read More</a></p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="fh5co-event to-animate-2">
+          <h3>CD专辑</h3>
+          <span class="fh5co-event-meta">CD ALBUM</span>
+          <p>
+          <div id="colee00"  style="overflow:hidden;height:160px;width:212px;margin-left:25px;">
+  <div id="colee111">
+    <p><img src="images/style_10.jpg" width="212" height="137"></p>
+    <p><img src="images/style_11.jpg" width="212" height="137"></p>
+    <p><img src="images/style_12.jpg" width="212" height="137"></p>
+    <p><img src="images/style_13.jpg" width="212" height="137"></p>
+  </div>
+  <div id="colee222"></div>
+</div>
+<script> 
+var speed=30;  
+var colee222=document.getElementById("colee222"); 
+var colee111=document.getElementById("colee111"); 
+var colee00=document.getElementById("colee00") ;
+colee222.innerHTML=colee111.innerHTML; //克隆colee1为colee2
+ function Marquee111(){  //当滚动至colee1与colee2交界时
+   if(colee222.offsetTop-colee00.scrollTop<=0){  
+   colee00.scrollTop-=colee111.offsetHeight; //colee跳到最顶端
+     }else{   
+	 colee00.scrollTop++ } }  
+	 var MyMar111=setInterval(Marquee111,speed)//设置定时器 
+//鼠标移上时清除定时器达到滚动停止的目的 
+colee.onmouseover=function() {clearInterval(MyMar111)} 
+colee.onmouseout=function(){MyMar111=setInterval(Marquee111,speed)}
+ </script>
+          
+          </p>
+          <p><a href="#" class="btn btn-primary btn-outline">Read More</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="fh5co-footer">
+  <div class="container">
+    <div class="row row-padded">
+      <div class="col-md-12 text-center">
+        <p class="to-animate">&copy; 2017 zebra</p>
+        <p class="text-center to-animate"><a href="#" class="js-gotop">Go To Top</a></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <ul class="fh5co-social">
+          <li class="to-animate-2"><a href="#"><i class="icon-facebook"></i></a></li>
+          <li class="to-animate-2"><a href="#"><i class="icon-twitter"></i></a></li>
+          <li class="to-animate-2"><a href="#"><i class="icon-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-2" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      </div>
+      <div class="modal-body"id="tips">
+        <p><a href="HomePage.html"><span>HomePage</span></a></p>
+        <p><a href="Menu.html"><span>Menu</span></a></p>
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal --> 
+</div>
+
+<!-- jQuery --> 
+<script src="js/jquery.min.js"></script> 
+<!-- jQuery Easing --> 
+<script src="js/jquery.easing.1.3.js"></script> 
+<!-- Bootstrap --> 
+<script src="js/bootstrap.min.js"></script> 
+<!-- Bootstrap DateTimePicker --> 
+<script src="js/moment.js"></script> 
+<script src="js/bootstrap-datetimepicker.min.js"></script> 
+<!-- Waypoints --> 
+<script src="js/jquery.waypoints.min.js"></script> 
+<!-- Stellar Parallax --> 
+<script src="js/jquery.stellar.min.js"></script> 
+
+<!-- Flexslider --> 
+<script src="js/jquery.flexslider-min.js"></script> 
+<script>
+    $(function () {
+        $('#date').datetimepicker();
+    });
+</script> 
+<!-- Main JS --> 
+<script src="js/main.js"></script>
+</body>
+</html>

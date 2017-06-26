@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS Document */
+
+#top{
+	background:white;
+	width:100%;
+	height:50px;
+	position:fixed;
+	top:0px;
+	left:0px;
+	border-bottom:solid thin #666;
+z-index: 666}
+nav{
+	position:fixed;
+	right:30px;
+	top:02px;}
+#top h1{
+	font-size:24px;
+	font-weight:500;
+	color:indianred;
+	margin:4px 22px;}
+li{
+	width:80px;
+	float:left;
+	list-style:none;
+	text-align:center;
+	line-height:32px;
+	transform:scale(1,1) rotate(0deg);}
+li a{
+	text-decoration:none;
+	color:indianred;}
+li:hover,li a:hover{
+	color:#FFF;
+	transform:scale(1.2,1.9) rotate(360deg);}

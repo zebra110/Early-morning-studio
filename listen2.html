@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>可视化音乐播放器</title>
+    <link rel="stylesheet" href="css/style2.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+<body>
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="home.html">清晨录音棚</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="page-scroll" href="home.html">Home</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="guide.html">Guide</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="Listen.html">Listen</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="style.html">album</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+<div class="view">
+    <div class="left-side">
+        <div class="control">
+            <div class="o-btns">
+
+
+                <input type="file" class="music-file" accept="audio/mp3" multiple="true"/>
+                <button class="muti">静音</button>
+                <button ><a href="Listen.html">back</a></button>
+            </div>
+        </div>
+
+        <div class="music-contain">
+
+            <ul class="music-list"></ul>
+        </div>
+    </div>
+
+    <div class="right-side">
+        <audio preload autoplay class="music-player"></audio>
+        <canvas id="cas" width="900" height="540"></canvas>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/main2.js"></script>
+</body>
+</html>

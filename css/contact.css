@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;}
+body{
+	font:"微软雅黑";}
+#ditu{
+	width:100%;
+	height:610px;
+	background:#9FC;}
+header span{
+	position:absolute;
+	top:100px;
+	left:43%;
+	font-size:36px;
+	font-family:'华文行楷';}
+#main{
+	width:1000px;
+	margin:70px auto;
+	text-align:center;}
+#huan{
+	padding:60px;
+	clear:both;}
+#huan a{
+	font-size:50px;
+	font-weight:200;}
+
+#detail{
+	margin:40px auto;
+	width:850px;}
+.det{
+	text-align:left;
+	margin:50px 30px;
+	width:220px;
+	float:left;}
+.det h3{
+	text-align:center;
+	margin:12px;
+	transform: skew(-24deg);}
+.det a,#huan a{text-decoration: underline #CCC;color:#000;transform: skew(0deg);}
+
+.det h3:hover{transform: skew(1deg);}
+#huan a:hover,.det a:hover{
+	color: #F60;transform: skew(-24deg);
+	text-decoration: underline;}
+
+#contact form{
+	position:absolute;
+	top:120px;
+	left:140px;
+	color:#FFF;}
+#contact form input[type=text]{
+	height:28px;}
+textarea,#contact form input[type=text]{
+		width:270px;
+	margin:20px;
+	color:#FFF;
+	background:transparent; 
+	border:none; 
+	border-bottom:2px solid  #F60;}
+button[type=submit]{
+	background:transparent;
+	border:#F60 solid 2px;
+	color:#F60;
+	width:60px;
+	line-height:32px;
+	margin:30px 40px;}
+button[type=submit]:hover{
+	background: #F90;
+	color:#FFF;
+	cursor:pointer;}
+#bottom,#footer{
+	background:#CCC;
+	color:#FFF;
+	text-align:center;}
+#bottom{
+	clear:both;
+		padding-bottom:20px;
+	background:#000;
+	position:relative;}
+#colorful{
+	width:800px;
+	margin:20px auto;
+	padding:90px 30px;}
+.color{
+	float:left;
+	width:68px;
+	height:68px;
+	margin:9px;
+	border-radius:45px;
+	line-height:60px;
+	text-align:center;
+	color:#FFF;
+	font-size:28px;}
+#icon{
+	text-align:center;
+	position:relative;	
+	background:#000;
+	height:270px;
+	width:100%;}
+.icon{
+	width:800px;
+	margin:auto;}
+
+figure{
+	position:relative;
+	width:30%;
+	height:240px;
+	overflow:hidden;
+	float:left;
+	margin:auto;
+	margin-top:15px;}
+figcaption{
+	position:absolute;
+	left:0;
+	top:0;
+	color:#FFF;
+	width:200px;
+	height:200px;}
+figure,div,h4,img,a,.color{
+	transition:all 0.3s;}
+figcaption img{
+	width:120px;
+	height:120px;
+	margin-top:12%;}
+figcaption div{
+	width:85%;
+	height:85%;
+	border:#FFF solid medium;
+	position:absolute;
+	top:8%;
+	left:8%;
+	transform:translate(0px,-400px) rotate(0deg);}
+figcaption:hover div{
+	transform:translate(0px,0px) rotate(360deg);}
+.color:hover{
+	color:#060;
+	background:#FFF!important;
+	font-size:46px;}

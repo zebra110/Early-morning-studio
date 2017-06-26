@@ -1,0 +1,25 @@
+
+#mainNav{
+	background: white;
+	opacity: 0.5;
+}
+#mainNav a{
+	color: red;
+}
+#logoname{
+	font-weight:bold;
+}
+li{
+	width:80px;
+	float:left;
+	list-style:none;
+	text-align:center;
+	line-height:32px;
+	transform:scale(1,1) rotate(0deg);}
+li a{
+	text-decoration:none;
+	color:#000;}
+li:hover,li a:hover{
+	color:#FFF;
+	background:#000;
+	transform:scale(1.2,1.9) rotate(360deg);}

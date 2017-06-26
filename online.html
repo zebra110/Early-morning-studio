@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Online_getSong</title>
+<style>
+*{
+	margin:0;
+	padding:0;
+	color:#FFF;}
+body{
+	background: url(images/wood_1.png);
+	font-size:18px;}
+#div2,#div3,#div4{
+	display:none;width:80%;
+	margin:100px;}
+section{
+	width:60%;
+	margin:12% 22%;}
+section p{
+	width:70%;}
+h1{
+	margin:20px;}
+section p,section h1,div{
+	transition:all 0.3s;}
+input[type=button]{
+	background:transparent;
+	border: #FFF solid thin;
+	margin:15px;
+	padding:8px 16px;font-size:18px;
+	margin-top:30px;}
+input[type=button]:hover{
+	color:#F60;
+	border:solid thin #F60;
+	cursor:pointer;
+	}
+input[type=text]{background:transparent;
+border:#FFF solid thin;
+width:250px;
+height:45px;
+line-height:40px;
+padding:3px;padding-left:60px;}
+
+
+#div5{
+	margin-left:40px;
+	position:relative;}
+#div4{
+	margin:40px auto;}
+.login{
+	background:#69F; color:#FFF; border:#FFF solid thin;}
+#erweima{
+	display:none;
+	position:absolute;
+	right:30px;
+	top:120px;}
+nav{
+	position:fixed;
+	right:30px;
+	top:12px;}
+li{
+	width:80px;
+	float:left;
+	list-style:none;
+	text-align:center;
+	line-height:32px;}
+li a{
+	text-decoration:none;
+	color:#000;}
+li:hover,li a:hover{
+	color:#FFF;
+	background:#000;}
+#top h1{
+	font-size:24px;
+	font-weight:600;
+	color: #F30;
+	margin:4px 22px;}
+#top{
+	background: #FFF;
+	width:100%;
+	height:50px;
+	color:#FFF;
+	position:fixed;
+	top:0px;
+	left:0px;
+	border-bottom:solid medium  #FF8000;}
+.login{
+	background:#69C!important;
+	text-align:center;
+	width:140px;
+	}
+input{transition:all 0.3s;}
+.login:hover{
+	background: #FF8E1E!important;
+	color:#FFF!important;
+	border:solid thin #FFF!important;}
+#div5>i{
+	width:20px;
+	height:32px;
+	color:#FFF;
+	font-size:24px;
+	position:absolute;
+	left:0px;
+	top:75px;}
+</style>
+<script type="text/javascript" src="js/jquery-1.5.1.min.js"></script>
+<script src="js/nav.js"></script>
+<link href="css/font-aw.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="top"><h1>清晨录音</h1> 
+<nav><ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="#">1</a></li>
+<li><a href="#">1</a></li></ul></nav></div>
+
+<section id="yuan">
+<h1><i class="icono-music .am-icon-sm"></i>在线取歌</h1>
+<p>清晨欢迎您！我们将为您提供最好的服务！</p>
+<input type="button" id="but1" value="客户取歌">
+
+<input type="button" id="but2" value="注   册">
+<input type="button" id="but3" value="二 维 码"></section>
+<div id="div2">
+<input type="button" id="but01" value="Back"><br><br><br>
+<div id="div5"><h1>客户取歌系统</h1>
+<input type="text" placeholder="请输入手机号"><i class="icono-iphone"></i><br><br>
+<input type="button" value="登   录" class="login"></div>
+</div>
+<div id="div4"><input type="button" id="but02" value="Back"><br>
+<h1>用 户 注 册</h1>
+<input type="text" placeholder="请输入手机号">
+<input type="button" value="发送验证码" class="login"><br>
+<input type="text" placeholder="请输入验证码">
+<input type="button" value="注  册" class="login"></div>
+<div id="erweima"><img src="images/1111.png"></div> 
+<script>
+	$(document).ready(function()
+  {
+  $("#but1").click(function(){
+    $("#yuan").fadeOut();
+	 $("#div2").slideDown(1000);
+  });
+  $("#but01").click(function(){
+	 $("#div2").slideUp(500);$("#yuan").fadeIn();
+  });
+   $("#but2").click(function(){
+    $("#yuan").fadeOut();
+	 $("#div4").slideDown(1000);
+  });
+  $("#but02").click(function(){
+	 $("#div4").slideUp(500);$("#yuan").fadeIn();
+  });
+  
+   $("#but3").click(function(){
+	 $("#erweima").toggle();
+  });
+});
+
+</script>
+</body>
+</html>
